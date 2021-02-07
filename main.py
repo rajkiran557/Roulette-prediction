@@ -102,7 +102,7 @@ if __name__ == '__main__':
 
     model.compile(optimizer='adam', loss='mean_squared_error')
 
-    model.fit(train_data, train_target, batch_size=10, epochs=3)
+    model.fit(train_data, train_target, batch_size=10, epochs=500)
 
     predictions = model.predict(test_data)
     predictionsR = roundPred(predictions)
